@@ -33,10 +33,6 @@ height: 500px;
 font-weight: bold;
 
 }
-.p{
-
-}    
-
 </style>
 </head>
 <body>
@@ -46,10 +42,34 @@ font-weight: bold;
     </header>
     <main>
         <img src="Gemini_Generated_Image_sroztzsroztzsroz.png" alt="">
+        </div>
         <h2>Vem para a melhor da cidade!!</h2>
         <p class="Autor"> Por: Emerson junior</p>
         <p>Variedades de Livros!!</p>
+        <button>✌️<span>0</span></button>
+    </div>
     </main>
    
 </body>
+<script>
+  // Seleciona o primeiro elemento <button> encontrado na página e o guarda na variável 'botao'
+  const botao = document.querySelector("button");
+
+  // Adiciona um "escutador de eventos" ao botão. 
+  // Quando o botão for clicado ("click"), ele vai chamar a função 'botaoClicado'
+  botao.addEventListener("click", botaoClicado);
+
+  // Define a função que será executada quando o botão for clicado
+  function botaoClicado() {
+    // Exibe a mensagem "fui clicado" no console do navegador (útil para testes)
+    console.log("fui clicado");
+
+    // Seleciona o elemento <span> que está dentro do botão e o guarda na variável 'texto'
+    let texto = botao.querySelector("span");
+
+    // Pega o conteúdo de texto do <span> e soma 1 (+1).
+    // O JavaScript tenta converter o texto existente em número para fazer esse incremento (comportamento de contador).
+    texto.textContent++;
+  }
+</script>
 </html>
